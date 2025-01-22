@@ -26,15 +26,10 @@ body {
   flex-direction: column;
 }
 h1 {
-  font-size: 1.313rem;
+  font-size: 1.5rem;
   line-height: 1;
   font-weight: 700;
   margin: 0;
-}
-@media (min-width: 768px) {
-  h1 {
-    font-size: 1.5rem;
-  } 
 }
 p {
   font-size: 0.875rem;
@@ -46,15 +41,25 @@ p {
   flex-direction: column;
   align-items: center;
   width: 24rem;
-  max-width: 75%;
+  max-width: 90%;
   background-color: var(--gray-800);
-  padding: 2.5rem;
+  padding: 1.5rem;
   border-radius: 0.75rem;
+}
+@media (min-width: 768px) {
+  .main {
+    padding: 2.5rem;
+  } 
 }
 .main img {
   width: 5.5rem;
   border-radius: 50%;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .main img {
+    margin-bottom: 2rem;
+  } 
 }
 .main h1 {
   margin-bottom: 0.5rem;
@@ -66,14 +71,23 @@ p {
 }
 .main__desc {
   text-align: center;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .main__desc {
+    margin-bottom: 1.75rem;
+  } 
 }
 .main__links {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 .main__links a {
+  width: 100%;
+  max-width: 19rem;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,6 +100,9 @@ p {
   text-align: center;
   text-decoration: none;
   border-radius: 0.5rem;
+}
+.main__links a:last-child {
+  margin-bottom: 0;
 }
 .main__links a:hover {
   color: var(--gray-700);
